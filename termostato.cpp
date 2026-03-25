@@ -32,7 +32,7 @@ int main() {
 
     try {
         Termostato t(20);
-        t.definir_temperatura(900); // 🔥 ataque
+        t.definir_temperatura(900);
     } catch (const std::exception& e) {
         std::cout << "Bloqueado: " << e.what() << std::endl;
     }
