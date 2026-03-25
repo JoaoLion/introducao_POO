@@ -35,7 +35,7 @@ int main() {
 
     try {
         Personagem p(100);
-        p.receber_dano(9999); // 🧟 ataque
+        p.receber_dano(9999);
 
         std::cout << "HP após dano: " << p.get_hp() << std::endl;
     } catch (const std::exception& e) {
