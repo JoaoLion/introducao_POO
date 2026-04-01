@@ -28,10 +28,17 @@ public:
 int main() {
     std::cout << "=== TESTE CARRINHO ===" << std::endl;
 
+    Carrinho c;
+    double preco;
+
     try {
-        Carrinho c;
-        c.adicionar_item(100);
-        c.adicionar_item(-50);
+        std::cout << "Digite o valor do item: ";
+        std::cin >> preco;
+
+        c.adicionar_item(preco);
+
+        std::cout << "Total atual do carrinho: " << c.get_total() << std::endl;
+
     } catch (const std::exception& e) {
         std::cout << "Bloqueado: " << e.what() << std::endl;
     }
