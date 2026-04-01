@@ -30,9 +30,21 @@ public:
 int main() {
     std::cout << "=== TESTE TERMOSTATO ===" << std::endl;
 
+    double temp;
+
     try {
-        Termostato t(20);
-        t.definir_temperatura(900);
+        std::cout << "Digite a temperatura inicial: ";
+        std::cin >> temp;
+
+        Termostato t(temp);
+
+        std::cout << "Digite a nova temperatura: ";
+        std::cin >> temp;
+
+        t.definir_temperatura(temp);
+
+        std::cout << "Temperatura atual: " << t.get_temperatura() << std::endl;
+
     } catch (const std::exception& e) {
         std::cout << "Bloqueado: " << e.what() << std::endl;
     }
