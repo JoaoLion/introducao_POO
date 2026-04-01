@@ -33,11 +33,18 @@ public:
 int main() {
     std::cout << "=== TESTE PERSONAGEM ===" << std::endl;
 
+    int dano;
+
     try {
         Personagem p(100);
-        p.receber_dano(9999);
+
+        std::cout << "Digite o valor do dano: ";
+        std::cin >> dano;
+
+        p.receber_dano(dano);
 
         std::cout << "HP após dano: " << p.get_hp() << std::endl;
+
     } catch (const std::exception& e) {
         std::cout << "Erro: " << e.what() << std::endl;
     }
