@@ -2,10 +2,10 @@
 LAB 3 - Introdução POO
 
 ## Carrinho
-![Descrição](imagens/carrinho.PNG)
+![Descrição](imagens/carrinho.png)
 
 ## Termostato
-![Descrição](imagens/termostato.PNG)
+![Descrição](imagens/termostato.png)
 
 ## Personagem
-![Descrição](imagens/personagem.PNG)
+![Descrição](imagens/personagem.png)
